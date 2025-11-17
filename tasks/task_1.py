@@ -1,5 +1,5 @@
-from pair import Pair
-from pair import make_pair
+from .pair import Pair
+from .pair import make_pair
 
 if __name__ == '__main__':
     print("Создание объектов через конструктор:")
@@ -61,3 +61,4 @@ if __name__ == '__main__':
     final_result = intermediate.multiply(mult2)
     print(f"После умножения на {mult2}:")
     final_result.display()
+
