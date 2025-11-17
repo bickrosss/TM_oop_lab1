@@ -1,4 +1,4 @@
-from money_task.money import Money
+from money_package.money import Money
 
 if __name__ == "__main__":
     print("демонстрация работы класса Money:")
