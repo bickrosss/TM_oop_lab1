@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-
 class Pair:
     def __init__(self, first=0, second=0):
         self.first = int(first)
@@ -32,4 +28,5 @@ class Pair:
 
 def make_pair(first, second):
     new_pair = Pair(first, second)
+
     return new_pair
