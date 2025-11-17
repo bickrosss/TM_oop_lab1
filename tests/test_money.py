@@ -1,8 +1,4 @@
-import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-
-from tasks.money_package.money import Money
+from tasks.money import Money
 
 def test_money_creation():
     money = Money(100, 50)
