@@ -1,6 +1,9 @@
-from pair import Pair
-from pair import make_pair
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
+from tasks.pair import Pair
+from tasks.pair import make_pair
 
 def test_pair_creation():
     print("Тест 1: Создание объекта Pair через конструктор")
@@ -58,4 +61,5 @@ if __name__ == "__main__":
     test_pair_multiply_positive()
     test_pair_multiply_negative()
     test_pair_multiply_zero()
+
     test_pair_multiply_large()
