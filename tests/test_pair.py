@@ -1,7 +1,3 @@
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from tasks.pair import Pair
 from tasks.pair import make_pair
 
@@ -63,5 +59,6 @@ if __name__ == "__main__":
     test_pair_multiply_zero()
 
     test_pair_multiply_large()
+
 
 
