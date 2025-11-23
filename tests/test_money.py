@@ -43,3 +43,4 @@ def test_money_multiplication():
     result = m1.multiply(2)
     assert result.rubles == 201
     assert result.kopecks == 0
+    

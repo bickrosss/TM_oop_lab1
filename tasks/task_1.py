@@ -67,4 +67,3 @@ if __name__ == "__main__":
     except ValueError:
         print("Ошибка: введите целые числа")
         exit(1)
-    

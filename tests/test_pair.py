@@ -72,3 +72,4 @@ if __name__ == "__main__":
     test_pair_multiply_large()
     test_pair_display(None)
     print("Все тесты пройдены!")
+    
