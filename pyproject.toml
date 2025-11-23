@@ -18,15 +18,48 @@ dependencies = [
 dev = [
     "black>=23.0.0",
     "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "pre-commit>=3.0.0",
 ]
 
 [tool.pytest.ini_options]
-pythonpath = ["."]
 testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = [
+    "--verbose",
+    "--color=yes",
+    "--rootdir=.",
+]
+pythonpath = ["tasks", "."]  # ✅ ДОБАВЛЕНО "tasks"
 
 [tool.black]
 line-length = 88
 target-version = ['py39']
+include = '\.pyi?$'
+extend-ignore = "E203, W503"
+extend-exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
 
 [tool.isort]
 profile = "black"
+line_length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203, W503, E501"
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+]
