@@ -32,7 +32,7 @@ addopts = [
     "--color=yes",
     "--rootdir=.",
 ]
-pythonpath = ["tasks", "."]  # ✅ ДОБАВЛЕНО "tasks"
+pythonpath = ["tasks", "."]
 
 [tool.black]
 line-length = 88
